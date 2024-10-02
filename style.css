@@ -350,7 +350,7 @@ nav .bx{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(image/phnbg.jpg);
+        background-image: url(https://github.com/shalinigiri/Shalini_portfolio/blob/main/image/phnbg.jpg);
     }
     .header-text{
         margin-top: 100%;
