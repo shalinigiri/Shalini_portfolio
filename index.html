@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">  
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class ="logo"><span>Shalini's </span>Portfolio</a>
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Service</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class='bx bx-arrow-back' onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-menu' onclick="openmenu()" ></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer </p>
+                <h1>Hi, I'm <span>Shalini </span><br>from Gingee</h1>
+            </div>
+        </div>
+    </div>
+    <a ref="class='bx bx-up-arrow-alt'" class="up-arrow" id="upArrow" title="Go to top">&#8679;</a>
+    <!---------about---------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+        <div class="about-col-1">
+            <img src="image/shalu.jpg">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I am a fresher with experience in software development, testing, and project management. 
+                My key skills include Python, SQL, HTML, and CSS. I have led IoT and machine learning projects 
+                and interned as a QA tester at RoboLabs India. I am seeking development roles where I can utilize my skills in full-stack development and problem-solving.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('internship')">Internship Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contains active-tab" id="skills">
+                <ul>
+                    <li><span>Programming Language</span><br>Python, SQL, HTML, CSS, JavaScript</li>
+                    <li><span>Tools & Technologies </span><br>MySQL, GitHub, Git, Photoshop, Postman, Vs Code, PyCharm, Arduino</li>
+                    <li><span>Testing & Development </span><br>Agile, Scrum, Jira, Automation Testing(Selenium), Manual Testing</li>
+                    <li><span>Other Tools </span><br>ChatGPT, Bard</li>
+                </ul>
+            </div>
+            <div class="tab-contains" id="internship">
+                <ul>
+                    <li><span>Sep 2023-Feb 2024 </span><br>QA Tester Internship at RoboLabs India</li>
+                    <p>Description<br>Project Experience:<br>	
+                        Ayini – Manually testing the new Android application - Link<br>
+                      •	Accurately identified and reported bugs, following standard procedures for test execution and bug reporting.<br>
+                      •	 Executed test cases for software builds on Android, ensuring high-quality performance and compliance    with project requirements.<br>
+                      •	Conducted regression and repetitive testing to validate new builds/releases, maintaining consistent quality standards.<br>
+                      •	Utilized software tools for daily data capture, effectively communicating and escalating failures, and providing detailed individual status reports.<br>
+                      •	Managed bug tracking and defect resolution using a custom Google Sheets system, ensuring timely delivery of results and adherence to project deadlines<br>
+                      •	Familiar with the Software Development Life Cycle (SDLC) and adept in Agile methodologies, ensuring smooth collaboration with development teams.
+                      </p>
+                </ul>
+            </div>
+            <div class="tab-contains" id="education">
+                <ul>
+                    <li><span>BE(ECE) - 2024</span><br>Thanthai Periyar Government Institute of Technology<br>CGPA: 8.84</li>
+                    <li><span>Higher Secondary - 2020 </span><br>Saradha Matric Higher Secondary School<br> Percentage: 80</li>
+                    <li><span>SSLC - 2018 </span><br>Saradha Matric Higher Secondary School<br> Percentage: 90</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!--------------------------services-------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class='bx bx-code-alt'></i>
+                <h2>Full-Stack Development</h2>
+                <p>Offer front-end and back-end development services for web and mobile applications, 
+                    with expertise in Python, SQL, HTML, CSS and Flutter. Capable of building responsive, 
+                    user-friendly interfaces and developing scalable back-end systems.<br><br> Tools/Technologies:<br>HTML, CSS, Python, SQL, Flutter<br></p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class='bx bx-code'></i>
+                <h2>Quality Assurance (QA) Testing</h2>
+                <p>Provide manual and automation testing services to ensure software 
+                    reliability and bug-free performance. Emphasize your experience with functional testing, writing test scripts
+                    and identifying and tracking bugs using Google Sheets<br><br>Tools/Technologies:<br>
+                    Postman, Agile, Google Sheets,Jira, Selenium</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class='bx bxs-mobile' ></i>
+                <h2>UI/UX Design & Prototyping</h2>
+                <p>I provide UI/UX design services aimed at creating intuitive, 
+                    user-friendly interfaces for web and mobile applications. 
+                    With a strong foundation in Figma and Photoshop, 
+                    I specialize in designing aesthetically pleasing and 
+                    functional user interfaces. My design process focuses 
+                    on delivering seamless user experiences, balancing creativity 
+                    with usability to meet client and project requirements.<br><br>Tools/Technologies:<br>
+                    Figma, Photoshop, GitHub
+                    
+                    
+                    </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------Portfolio---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/app11.jpg">
+                <div class="layer">
+                    <h3>IoT Tire Pressure Monitoring System (Team Lead)</h3>
+                    <p>Led the design and development of an IoT-enabled tire pressure 
+                        monitoring system. This project utilized Flutter for 
+                        building mobile dashboards, ESP32 microcontrollers 
+                        and industrial tire pressure sensors to monitor and 
+                        display real-time tire pressure data. </p>
+                    <a href="#"><i class='bx bx-link' ></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/app222.jpeg">
+                <div class="layer">
+                    <h3>Heart Disease Prediction using Machine Learning</h3>
+                    <p>Developed a machine learning model in Python to predict heart 
+                        disease using health indicators like cholesterol levels and 
+                        blood pressure. Utilized scikit-learn for 
+                        classification algorithms to enhance preventive healthcare.</p>
+                    <a href="#"><i class='bx bx-link' ></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/app33.png">
+                <div class="layer">
+                    <h3>Ayini (Recipes App)</h3>
+                    <p>Performed manual testing for the Android app Ayini, 
+                        identifying over 50 bugs and tracking them via Google Sheets. 
+                        Created test plans and collaborated with the development 
+                        team to improve app functionality using Agile methodologies.<br>
+                        Tools/Technologies: Google Sheets, Agile, Android</p>
+                    <a href="#"><i class='bx bx-link' ></i></a>
+                </div>
+            </div>
+        </div>
+       <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-----------------------Contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><a href="mailto: shalinigiri0308@gmail.com"><i class='bx bxl-gmail' ></i> shalinigiri0308@gmail.com</a></p>
+                <p><a href="tel: +91 8072621932"><i class='bx bxs-phone' ></i> 8072621932</a></p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shalinigiri"><i class='bx bxl-linkedin-square' ></i></a>
+                    <a href="https://github.com/shalinigiri"><i class='bx bxl-github'></i></a>
+                    <a href=""><i class='bx bxl-instagram' ></i></a>
+                    <a href=""><i class='bx bxl-twitter' ></i></a>
+                </div>
+                <a href="image/Shalini_SD.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &copy; Shalini.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontains = document.getElementsByClassName("tab-contains");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontain of tabcontains){
+            tabcontain.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    
+    const upArrow = document.getElementById("upArrow");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            upArrow.style.display = "block"; 
+        } else {
+            upArrow.style.display = "none"; 
+        }
+    };
+
+    
+    upArrow.onclick = function(e) {
+        e.preventDefault(); 
+        window.scrollTo({ top: 0, behavior: 'smooth' }); 
+    };
+</script>
+
+<script>
+    var sidemenu =document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzwgNObvsq-R6LffgLjcODkCJonftLmOv38KR50fJaS1G7wxgNnkD-MJOPwe1IIckj6/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML ="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+    
+</body>
+</html>
